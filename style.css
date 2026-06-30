@@ -411,3 +411,378 @@ transform:translateY(0px);
 }
 
 }
+/* ======================================
+   HOW IT WORKS
+====================================== */
+
+.steps{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:28px;
+
+margin-top:70px;
+
+}
+
+.step{
+
+background:white;
+
+padding:40px;
+
+border-radius:24px;
+
+border:1px solid var(--line);
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.step:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+}
+
+.step span{
+
+font-size:14px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+color:#888;
+
+display:block;
+
+margin-bottom:18px;
+
+}
+
+.step h3{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+.step p{
+
+font-size:17px;
+
+color:#666;
+
+margin:0;
+
+}
+
+/* ======================================
+   SESSION CARDS
+====================================== */
+
+.slots .container{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+}
+
+.slot-card{
+
+background:white;
+
+padding:55px;
+
+border-radius:30px;
+
+border:1px solid var(--line);
+
+transition:.4s;
+
+}
+
+.slot-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 35px 70px rgba(0,0,0,.08);
+
+}
+
+.slot-card h3{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+.slot-card p{
+
+font-size:18px;
+
+color:#666;
+
+margin-bottom:20px;
+
+}
+
+.slot-card a{
+
+display:inline-block;
+
+margin-top:20px;
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#111;
+
+}
+
+/* ======================================
+   PRICING
+====================================== */
+
+.price-box{
+
+max-width:620px;
+
+margin:auto;
+
+background:white;
+
+padding:70px;
+
+border-radius:36px;
+
+text-align:center;
+
+border:1px solid var(--line);
+
+box-shadow:0 30px 80px rgba(0,0,0,.05);
+
+}
+
+.price-box h2{
+
+font-size:88px;
+
+margin-bottom:10px;
+
+}
+
+.price-box p{
+
+font-size:20px;
+
+margin-bottom:15px;
+
+color:#666;
+
+}
+
+/* ======================================
+   FAQ
+====================================== */
+
+.faq-item{
+
+background:white;
+
+border:1px solid var(--line);
+
+border-radius:18px;
+
+margin-bottom:20px;
+
+overflow:hidden;
+
+}
+
+.faq-item button{
+
+width:100%;
+
+padding:28px;
+
+font-size:20px;
+
+font-family:Manrope;
+
+background:none;
+
+border:none;
+
+text-align:left;
+
+cursor:pointer;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.answer{
+
+display:none;
+
+padding:0 28px 28px;
+
+font-size:17px;
+
+color:#666;
+
+}
+
+.faq-item.active .answer{
+
+display:block;
+
+}
+
+/* ======================================
+   CTA
+====================================== */
+
+.cta{
+
+text-align:center;
+
+padding:180px 0;
+
+}
+
+.cta h2{
+
+margin:auto;
+
+font-size:72px;
+
+max-width:900px;
+
+margin-bottom:30px;
+
+}
+
+.cta p{
+
+margin:auto;
+
+font-size:22px;
+
+max-width:650px;
+
+margin-bottom:45px;
+
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer{
+
+padding:70px 0;
+
+border-top:1px solid var(--line);
+
+}
+
+footer .container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+footer div:first-child{
+
+font-size:26px;
+
+font-weight:800;
+
+letter-spacing:4px;
+
+font-family:Manrope;
+
+}
+
+footer div:last-child{
+
+color:#777;
+
+}
+
+/* ======================================
+   HOVER GLOW
+====================================== */
+
+.primary-btn{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.primary-btn::before{
+
+content:"";
+
+position:absolute;
+
+left:-120%;
+
+top:0;
+
+width:120%;
+
+height:100%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.3),
+
+transparent
+
+);
+
+transition:.7s;
+
+}
+
+.primary-btn:hover::before{
+
+left:120%;
+
+}
